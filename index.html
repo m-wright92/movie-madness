@@ -2,12 +2,44 @@
 <html lang="en-US">
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="css/text">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <title>Mark&Mike Movie Madness</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Mark & Mike's Movie Madness</h1>
+    <h2>Movie List:</h2>
+    
+      <ul>
+        <li class="batman">The Batman</li>
+        <p class="hidden batman">[3 pm] <br> [6 pm] <br> [9 pm]</p>
+        <li class="jack">Jack Reacher</li>
+        <p class="hidden jack">[3 pm] <br> [6 pm] <br> [9 pm]</p>
+        <li class="morbius">Morbius</li>
+        <p class="hidden morbius">[3 pm] <br> [6 pm] <br> [9 pm]</p>
+        <li class="dune">Dune 2</li>
+        <p class="hidden dune">[3 pm] <br> [6 pm] <br> [9 pm]</p>
+      </ul>
+    <form id="movieOptions">
+      <label for ="movie"><strong>Please pick your movie:</strong></label>
+        <select class="form-control" id="movie">
+          <option>The Batman</option>
+          <option>Jack Reacher</option>
+          <option>Morbius</option>
+          <option>Dune 2</option>
+        </select>
+        <label for ="movieTime"><strong>Please pick your showtime:</strong></label>
+        <select class="form-control" id="movieTime">
+          <option value="3">3pm</option>
+          <option value="6">6pm</option>
+          <option value="9">9pm</option>
+        </select>
+      <input type="number" name="age" id="age-input" placeholder="Enter your age here">
+      <button type="submit">Submit</button>
+    </form>
+    <p id="output"></p>
+  </div>
 </body>
 </html>
